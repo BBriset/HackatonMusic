@@ -1,6 +1,8 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+
 import './Gift.css';
+
 
 export default function Gift() {
   const [songs, setSongs] = useState([]);
@@ -22,6 +24,7 @@ export default function Gift() {
         .map((song) => {
           return (
             <div className="gift">
+
               <p className="title">{song.title}</p>
               <div className="song">
                 <p>{song.artist.name}</p>
@@ -29,6 +32,7 @@ export default function Gift() {
                   Lien vers la partition
                 </a>
               </div>
+
             </div>
           );
         })}
