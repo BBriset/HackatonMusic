@@ -1,0 +1,42 @@
+.homeDiv {
+  border: 5px solid darkblue;
+  margin: 30px 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homePresentation {
+  border: 5px solid red;
+  margin: 20px 30px 23px;
+  font-size: x-large;
+  text-align: center;
+}
+
+.btn-grad {
+  border: 5px solid darkgreen;
+  background-image:
+    linear-gradient(
+      to right,
+      #e9d362 0%,
+      #333 51%,
+      #e9d362 100%
+    );
+  font-size: medium;
+  margin: 30px;
+  padding: 20px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.7s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
