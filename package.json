@@ -12,7 +12,8 @@
     "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
     "reset-css": "^5.0.1",
-    "styled-components": "^5.3.3"
+    "styled-components": "^5.3.3",
+    "styled-reset": "^4.3.4"
   },
   "scripts": {
     "start": "react-scripts start",
