@@ -1,0 +1,106 @@
+ul,
+li,
+blockquote,
+p {
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+}
+
+body {
+  background: #333;
+  overflow: hidden;
+}
+
+.side::before,
+.side::after {
+  display: none;
+}
+
+.side .md > blockquote:last-of-type,
+.side .md > blockquote:last-of-type p,
+.side .md > blockquote:last-of-type [href='/'] {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+}
+
+.side .md > blockquote:last-of-type [href='/'] {
+  display: block;
+  height: 2000px;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/299775/snow-sparse.png);
+  animation: s 10s linear infinite;
+  background-size: auto;
+}
+
+.side .md > blockquote:last-of-type p:nth-of-type(1),
+.side .md > blockquote:last-of-type p:nth-of-type(2),
+.side .md > blockquote:last-of-type p:nth-of-type(4),
+.side .md > blockquote:last-of-type p:nth-of-type(6) {
+  animation: sw 5s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite alternate;
+  transform: translateX(-50px);
+}
+
+.side .md > blockquote:last-of-type p:nth-of-type(1) a,
+.side .md > blockquote:last-of-type p:nth-of-type(2) a {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/299775/snow-dense.png);
+  animation-duration: 25s;
+}
+
+.side .md > blockquote:last-of-type p:nth-of-type(1) {
+  animation-duration: 35s;
+}
+
+.side .md > blockquote:last-of-type p:nth-of-type(1) a {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/299775/snow-verydense-blur.png);
+  transform: translateZ(-25px);
+  animation-name: sF;
+  width: 4000px;
+  top: -500px;
+  left: -2000px;
+}
+
+/* .side .md > blockquote:last-of-type a:nth-child(2) {
+  animation-duration: 10s;
+  background-size: 250px;
+}
+
+.side .md > blockquote:last-of-type a:nth-child(3) {
+  animation-duration: 20s;
+  background-size: 500px;
+} */
+
+.side .md > blockquote:last-of-type p:nth-of-type(6) a {
+  animation-duration: 5s;
+  transform: translateZ(75px);
+  animation-name: sC;
+}
+
+@keyframes s {
+  0% {
+    transform: translateY(-1000px);
+  }
+}
+
+@keyframes sC {
+  0% {
+    transform: translateY(-1000px) translateZ(75px);
+  }
+}
+
+@keyframes sF {
+  0% {
+    transform: translateY(-1000px) translateZ(-25px);
+  }
+}
+
+@keyframes sw {
+  to {
+    transform: translateX(50px);
+  }
+}
