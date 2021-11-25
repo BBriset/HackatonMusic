@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Home.css';
 
 function Home() {
@@ -7,9 +8,9 @@ function Home() {
         Nous te souhaitons la bienvenue sur notre site, accède directement à
         notre calendrier de l&apos;avant et récupère ton cadeau du jour
       </p>
-      <button className="btn-grad" type="button">
+      <Link to="/Calendar" className="btn-grad" type="button">
         access the calendar
-      </button>
+      </Link>
     </div>
   );
 }
