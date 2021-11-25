@@ -1,48 +1,63 @@
+import { useState, useEffect } from 'react';
 import Door from '../Door/Door';
 
 export default function Calendar() {
-  const doors = [
-    { text: 'Foo' },
-    { text: 'Bar' },
-    { text: 'Baz' },
-    { text: 'Foobar' },
-    { text: 'Lorem' },
-    { text: 'ipsum' },
-    { text: 'dolor' },
-    { text: 'sit' },
-    { text: 'hello' },
-    { text: 'world' },
-    { text: 'Foo' },
-    { text: 'Bar' },
-    { text: 'Baz' },
-    { text: 'Foo' },
-    { text: 'Foo' },
-    { text: 'Foo' },
-    { text: 'Foo' },
-    { text: 'Foo' },
-    { text: 'Foo' },
-    { text: 'Foo' },
-    { text: 'Foo' },
-    { text: 'Foo' },
-    { text: 'Foo' },
-    { text: 'Foo' },
+  const [doors, setDoors] = useState([]);
+  const initDoors = [
+    { isOpen: false, text: 'Foo' },
+    { isOpen: false, text: 'Bar' },
+    { isOpen: false, text: 'Baz' },
+    { isOpen: false, text: 'Foobar' },
+    { isOpen: false, text: 'Lorem' },
+    { isOpen: false, text: 'ipsum' },
+    { isOpen: false, text: 'dolor' },
+    { isOpen: false, text: 'sit' },
+    { isOpen: false, text: 'hello' },
+    { isOpen: false, text: 'world' },
+    { isOpen: false, text: 'Foo' },
+    { isOpen: false, text: 'Bar' },
+    { isOpen: false, text: 'Baz' },
+    { isOpen: false, text: 'Foo' },
+    { isOpen: false, text: 'Foo' },
+    { isOpen: false, text: 'Foo' },
+    { isOpen: false, text: 'Foo' },
+    { isOpen: false, text: 'Foo' },
+    { isOpen: false, text: 'Foo' },
+    { isOpen: false, text: 'Foo' },
+    { isOpen: false, text: 'Foo' },
+    { isOpen: false, text: 'Foo' },
+    { isOpen: false, text: 'Foo' },
+    { isOpen: false, text: 'Foo' },
   ];
+
+  useEffect(() => {
+    const tmpDoors = [...initDoors].map((item, index, arr) => ({
+      ...item,
+      num: index,
+      total: arr.length,
+      rand: Math.random(),
+    }));
+    setDoors(tmpDoors);
+  }, []);
+
   return (
     <ul>
       {doors
-        .map((item, index, arr) => ({
-          ...item,
-          num: index + 1,
-          isOpen: false,
-          total: arr.length,
-          rand: Math.random(),
-        }))
         .sort((a, b) => a.rand - b.rand)
-        .map((item) => (
-          <li key={item.index}>
-            <Door {...item} />
-          </li>
-        ))}
+        .map((item) => {
+          return (
+            <li key={item.index}>
+              <Door
+                {...item}
+                open={(idx) => {
+                  const tmpDoors = [...doors];
+                  tmpDoors.find((elt) => elt.num === idx).isOpen = true;
+                  setDoors(tmpDoors);
+                }}
+              />
+            </li>
+          );
+        })}
     </ul>
   );
 }
