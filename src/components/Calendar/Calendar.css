@@ -1,0 +1,17 @@
+.layout {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 200px);
+  grid-auto-rows: 200px;
+  background: orange;
+  padding: 20px;
+  list-style: none;
+  justify-content: center;
+}
+
+input {
+  height: 200px;
+  width: 200px;
+  background: #1fe0;
+  z-index: 1;
+}

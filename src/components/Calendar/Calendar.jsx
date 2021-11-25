@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Door from '../Door/Door';
+import './Calendar.css';
 
 export default function Calendar() {
   const [doors, setDoors] = useState([]);
@@ -41,7 +42,7 @@ export default function Calendar() {
   }, []);
 
   return (
-    <ul>
+    <ul className="layout">
       {doors
         .sort((a, b) => a.rand - b.rand)
         .map((item) => {
