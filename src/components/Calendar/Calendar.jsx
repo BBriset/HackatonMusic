@@ -1,3 +1,5 @@
+import Door from '../Door/Door';
+
 export default function Calendar() {
   const doors = [
     { text: 'Foo' },
@@ -38,7 +40,7 @@ export default function Calendar() {
         .sort((a, b) => a.rand - b.rand)
         .map((item) => (
           <li key={item.index}>
-            <h1>{item.num}</h1>
+            <Door {...item} />
           </li>
         ))}
     </ul>
