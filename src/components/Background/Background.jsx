@@ -1,4 +1,4 @@
-import XMas from './christmas-ornament-outdoors.jpg';
+/* import XMas from './christmas-ornament-outdoors.jpg'; */
 import './Background.css';
 
 export default function Background() {
@@ -6,7 +6,7 @@ export default function Background() {
     <div className="side">
       <div className="md">
         <blockquote>
-          <img src={XMas} className="christmas" alt="background christmas" />
+          {/* <img src={XMas} className="christmas" alt="background christmas" /> */}
           <p>
             <a href="/"> </a>
           </p>
