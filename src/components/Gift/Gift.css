@@ -16,10 +16,11 @@ a {
   color: #fff;
   background: #912c22;
   text-shadow: 0 0 10px #fff;
-  width: 70%;
+  width: 60%;
   height: 200px;
   border-radius: 50px;
   text-align: center;
+  padding: 10px;
 }
 
 .title,
@@ -34,14 +35,31 @@ a {
   padding-top: 30px;
 }
 
+.score {
+  margin-top: 15px;
+}
+
+.clip {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
 @media screen and (max-width: 768px) {
   .gift {
     width: 90%;
-    height: 300px;
+    height: 400px;
   }
 
   .title,
   .song {
     font-size: 50px;
+  }
+
+  .clip {
+    display: flex;
+    margin: auto;
+    width: 90%;
   }
 }
