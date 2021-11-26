@@ -3,13 +3,10 @@
   align-items: center;
   justify-content: center;
   background: white;
-  color: white;
   border-left: 100px solid crimson;
   border-right: 100px solid crimson;
   border-radius: 20px;
   transition: border-width 1s ease;
-  font-family: 'Spicy Rice', cursive;
-  font-size: 60px;
   height: 200px;
   font-weight: bolder;
 }
@@ -17,13 +14,32 @@
 .open {
   border-width: 0;
   color: crimson;
-  font-size: 30px;
+  font-size: 15px;
 }
 
 .openInput {
   height: 200px;
   width: 200px;
-  background: #1fe0;
+  color: white;
   position: absolute;
   border: none;
+  font-size: 60px;
+  font-family: 'Spicy Rice', cursive;
+}
+
+.titleDoor {
+  display: flex;
+  flex-direction: column-reverse;
+  text-decoration: none;
+  text-align: center;
+  color: crimson;
+  align-items: center;
+  justify-content: space-around;
+  height: 200px;
+  padding: 4px;
+}
+
+img {
+  height: 100px;
+  width: 100px;
 }

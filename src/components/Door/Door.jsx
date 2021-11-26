@@ -1,17 +1,26 @@
+import { Link } from 'react-router-dom';
 import './Door.css';
 
 export default function Door(item) {
-  const { num, text, isOpen, open } = item;
+  const { num, artist, song, isOpen, open, img, url } = item;
   return (
     <div className={isOpen ? 'Door open' : 'Door'}>
-      <input
-        className="openInput"
-        type="button"
-        onClick={() => {
-          open(num);
-        }}
-      />
-      {isOpen ? text : `${num + 1}`}
+      {isOpen ? (
+        <Link to={`/Gift/${url}`} className="titleDoor">
+          <p>{artist}</p>
+          <img src={img} alt="toto" />
+          <p>{song}</p>
+        </Link>
+      ) : (
+        <input
+          className="openInput"
+          type="button"
+          onClick={() => {
+            open(num);
+          }}
+          value={`${num + 1}`}
+        />
+      )}
     </div>
   );
 }
