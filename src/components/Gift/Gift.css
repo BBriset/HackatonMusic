@@ -21,11 +21,12 @@ a {
   border-radius: 50px;
   text-align: center;
   padding: 10px;
+  justify-content: space-evenly;
 }
 
 .title,
 .song {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .song {
@@ -35,10 +36,10 @@ a {
   padding-top: 30px;
 }
 
-.score {
+/* .score {
   margin-top: 15px;
 }
-
+ */
 .clip {
   display: flex;
   justify-content: space-evenly;
@@ -50,7 +51,6 @@ a {
   .gift {
     width: 90%;
     height: 400px;
-
   }
 
   .title,
