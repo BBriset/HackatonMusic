@@ -1,5 +1,4 @@
 .homeDiv {
-  border: 5px solid darkblue;
   margin: 30px 50px 20px;
   display: flex;
   flex-direction: column;
@@ -8,14 +7,13 @@
 
 .homePresentation {
   color: #e9d362;
-  border: 5px solid red;
   margin: 20px 30px 23px;
   font-size: x-large;
   text-align: center;
 }
 
 .btn-grad {
-  border: 5px solid darkgreen;
+  /* border: 5px solid darkgreen; */
   background-image: linear-gradient(
     to right,
     #e9d362 0%,
