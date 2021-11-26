@@ -1,11 +1,11 @@
 .footerContact {
-  align-items: flex-end;
   background-color: var(--secondary-color);
-  color: var(--main-color);
+  color: white;
   padding: 10px;
   font-size: 15px;
   width: 100;
-  position: relative;
+  position: fixed;
+  bottom: 0;
 }
 
 .footerContent {
@@ -15,8 +15,7 @@
 .listItemsFooter {
   display: flex;
   justify-content: space-evenly;
-  padding: 10px;
-  margin-left: 7vh;
+  padding: end;
 }
 
 .titleFollow {
