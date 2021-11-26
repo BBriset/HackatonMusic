@@ -23,15 +23,15 @@ export default function Gift() {
         .map((song) => {
           return (
             <div className="gift">
-              <p className="title">{song.title}</p>
+              <p className="title"> Song - {song.title}</p>
               <div className="song">
-                <p>{song.artist.name}</p>
+                <p>Artist - {song.artist.name}</p>
                 <a
                   href={`http://www.songsterr.com/a/wa/song?id=${song.id}`}
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Lien vers la partition
+                  Link to score
                 </a>
               </div>
             </div>
