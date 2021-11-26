@@ -14,7 +14,7 @@
 }
 
 .btn-grad {
-  /* border: 5px solid darkgreen; */
+  text-decoration: none;
   background-image:
     linear-gradient(
       to right,
@@ -22,7 +22,6 @@
       #333 51%,
       #e9d362 100%
     );
-
   font-size: medium;
   margin: 30px;
   padding: 20px 45px;
