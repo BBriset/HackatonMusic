@@ -15,7 +15,7 @@ export default function Gift() {
         setSongs(data);
       });
   }, []);
-  console.log(songs[0]);
+
   return (
     <div>
       {songs

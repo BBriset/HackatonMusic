@@ -2,7 +2,12 @@ import React, { useState } from 'react';
 import Modal from 'react-modal';
 import Linckedin from './Photos/linckedin.png';
 import Github from './Photos/github.png';
-import Rocket from './Photos/rocketlogo.png';
+
+import Marion from './Photos/Marion.jpg';
+import Jeremy from './Photos/Jeremy.jpg';
+import Bertrand from './Photos/Bertrand.jpg';
+import Benoit from './Photos/Benoit.jpg';
+import Claire from './Photos/Claire.jpg';
 
 import './Footer.css';
 
@@ -87,23 +92,21 @@ function Footer() {
               <div className="aboutUsModal">
                 <div className="headerDescription">
                   <p className="textAboutUs">
-                    Les fêtes de de noel approchant nous avons décidé de partir,
-                    sur lidée dun calendrier de lavant, avec comme thême
-                    principale la musique
+                    Christmas time is coming, we decide to go on an idea of
+                    advent calendar, with main theme the music.
                     <br />
                     <br />
-                    Vous trovuerez donc dans ce calendrier une chanson en lien
-                    avec noël , une différente de pour chaque jours jusquau 25
-                    décembre.
+                    You find in this calendar, a song christmas, different by
+                    day until Christmas day.
                     <br />
                     <br />
-                    Nous espérons que cela vous plaira, en tout cas cela nous à
-                    bien amusé de réalisé ce site :).
+                    We hope you enjoy. Personally, We have had a lot of fun to
+                    make this website.
                   </p>
                 </div>
                 <section className="descriptionAboutUs">
                   <div className="profilAboutUs">
-                    <img src={Rocket} className="logoAboutUs" alt="logo" />
+                    <img src={Bertrand} className="logoAboutUs" alt="logo" />
                     <p className="nameAboutUs">Bertrand Briset</p>
                     <a
                       href="https://github.com/BBriset"
@@ -125,7 +128,7 @@ function Footer() {
                     </a>
                   </div>
                   <div className="profilAboutUs">
-                    <img src={Rocket} className="logoAboutUs" alt="logo" />
+                    <img src={Claire} className="logoAboutUs" alt="logo" />
                     <p className="nameAboutUs">Claire Delaleau</p>
                     <a
                       href="https://github.com/clairedelaleau"
@@ -147,7 +150,7 @@ function Footer() {
                     </a>
                   </div>
                   <div className="profilAboutUs">
-                    <img src={Rocket} className="logoAboutUs" alt="logo" />
+                    <img src={Jeremy} className="logoAboutUs" alt="logo" />
                     <p className="nameAboutUs">Jérémy Vandomme</p>
                     <a
                       href="https://github.com/Vjerem"
@@ -169,7 +172,7 @@ function Footer() {
                     </a>
                   </div>
                   <div className="profilAboutUs">
-                    <img src={Rocket} className="logoAboutUs" alt="logo" />
+                    <img src={Marion} className="logoAboutUs" alt="logo" />
                     <p className="nameAboutUs">Marion Grolleau </p>
                     <a
                       href="https://github.com/Mariion-62"
@@ -191,7 +194,7 @@ function Footer() {
                     </a>
                   </div>
                   <div className="profilAboutUs">
-                    <img src={Rocket} className="logoAboutUs" alt="logo" />
+                    <img src={Benoit} className="logoAboutUs" alt="logo" />
                     <p className="nameAboutUs">Benoit Zenone</p>
                     <a
                       href="https://github.com/BenZen59"
