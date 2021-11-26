@@ -13,13 +13,14 @@
 }
 
 .btn-grad {
-  /* border: 5px solid darkgreen; */
-  background-image: linear-gradient(
-    to right,
-    #e9d362 0%,
-    #333 51%,
-    #e9d362 100%
-  );
+  text-decoration: none;
+  background-image:
+    linear-gradient(
+      to right,
+      #e9d362 0%,
+      #333 51%,
+      #e9d362 100%
+    );
   font-size: medium;
   margin: 30px;
   padding: 20px 45px;
