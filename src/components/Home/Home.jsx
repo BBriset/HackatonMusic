@@ -5,8 +5,11 @@ function Home() {
   return (
     <div className="homeDiv">
       <p className="homePresentation">
-        Nous te souhaitons la bienvenue sur notre site, accède directement à
-        notre calendrier de l&apos;avant et récupère ton cadeau du jour
+        Nous te souhaitons la bienvenue sur notre site.
+        <br />
+        <br />
+        accède directement à notre calendrier de l&apos;avant et récupère ton
+        cadeau du jour
       </p>
       <Link to="/Calendar" className="btn-grad" type="button">
         access the calendar

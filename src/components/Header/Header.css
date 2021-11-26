@@ -1,0 +1,15 @@
+.headerDiv {
+  background-color: var(--secondary-color);
+  color: white;
+  font-size: 15px;
+  position: relative;
+  width: 97%;
+  margin: 20px 20px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.santa {
+  width: 350px;
+  height: 350px;
+}
