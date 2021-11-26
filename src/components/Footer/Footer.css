@@ -115,7 +115,7 @@
 
 .closeModalContact {
   position: relative;
-  left: 90px;
+  left: 25%;
 }
 
 .titleContact {
@@ -231,7 +231,7 @@
 
 .closeModalAboutUs {
   position: relative;
-  left: 40%;
+  left: 33%;
 }
 
 .contentsCgu {
