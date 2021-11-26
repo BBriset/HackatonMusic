@@ -1,9 +1,9 @@
 .homeDiv {
-  margin: 30px 50px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: 'Mountain of Christmas', cursive;
+  min-height: 35vh;
 }
 
 .homePresentation {
@@ -14,6 +14,7 @@
 }
 
 .btn-grad {
+  display: flex;
   text-decoration: none;
   background-image:
     linear-gradient(
@@ -22,21 +23,32 @@
       #333 51%,
       #e9d362 100%
     );
-  font-size: x-large;
-  margin: 30px;
-  padding: 20px 45px;
+
+  font-size: medium;
+  height: 7vh;
+  width: 15vw;
+
   text-align: center;
+  align-items: center;
   text-transform: uppercase;
   transition: 0.7s;
   background-size: 200% auto;
   color: white;
   box-shadow: 0 0 20px #eee;
   border-radius: 10px;
-  display: block;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .btn-grad:hover {
   background-position: right center; /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .btn-grad {
+    height: 7vh;
+    width: 50vw;
+  }
 }

@@ -1,12 +1,11 @@
 .footerContact {
   background-color: var(--secondary-color);
   color: white;
-  padding: 20px;
   font-size: 15px;
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
-  margin-top: 10px;
+  height: 15vh;
 }
 
 .ReactModal__Overlay {
@@ -100,7 +99,7 @@
 }
 
 .windowOpenContact {
-  border: 5px solid darkblue;
+  border-radius: 5%;
   color: black;
   margin: auto;
   margin-top: 10vh;
@@ -108,7 +107,7 @@
   padding-bottom: 5vh;
   background-color: rgb(255, 88, 88);
   transform: scale(1);
-  opacity: 1;
+  opacity: 0.9;
   z-index: 2;
   animation: show 0.5s;
   inset: 5em;
@@ -148,7 +147,7 @@
 }
 
 .windowOpenAboutUs {
-  border: 5px solid darkblue;
+  border-radius: 5%;
   color: black;
   margin: auto;
   margin-top: 3vh;
