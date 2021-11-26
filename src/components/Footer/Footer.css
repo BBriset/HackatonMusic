@@ -1,0 +1,260 @@
+.footerContact {
+  align-items: flex-end;
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  padding: 10px;
+  font-size: 15px;
+  width: 100;
+  position: relative;
+}
+
+.footerContent {
+  justify-content: space-between;
+}
+
+.listItemsFooter {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin-left: 7vh;
+}
+
+.titleFollow {
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.followUsFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 25px;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 5px;
+}
+
+.logoFooter {
+  display: flex;
+  padding-top: 10px;
+}
+
+.socialFooter {
+  margin: 5px;
+}
+
+.modalHeader {
+  position: relative;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.btnContact,
+.btnAboutUs {
+  padding-bottom: 10px;
+  border: none;
+  background-color: var(--secondary-color);
+  font: var(--font);
+  color: var(--main-color);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000;
+}
+
+.modal-backdrop.in {
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+
+@keyframes show {
+  from {
+    transform: scale(0);
+    opacity: 0;
+    z-index: -1;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+    z-index: 2;
+  }
+}
+
+.windowOpenContact {
+  border: 5px solid darkblue;
+  color: black;
+  margin: auto;
+  margin-top: 10vh;
+  width: 300px;
+  padding-bottom: 5vh;
+  background-color: var(--main-color);
+  transform: scale(1);
+  opacity: 1;
+  z-index: 2;
+  animation: show 0.5s;
+  inset: 5em;
+}
+
+.closeModalContact {
+  position: relative;
+  left: 90px;
+}
+
+.titleContact {
+  margin-right: 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.firstName,
+.lastName,
+.email,
+.message,
+.submitContact {
+  margin-top: 20px;
+}
+
+.firstName h3,
+.lastName h3,
+.email h3,
+.message h3 {
+  padding: 10px;
+  text-align: center;
+}
+
+.windowOpenAboutUs {
+  border: 5px solid darkblue;
+  color: black;
+  margin: auto;
+  margin-top: 3vh;
+  width: 45%;
+  height: auto;
+  background-color: var(--main-color);
+  transform: scale(1);
+  opacity: 1;
+  z-index: 2;
+  animation: show 0.5s;
+}
+
+.titleAboutUs {
+  font-size: 26px;
+}
+
+.modalHeaderAboutUs {
+  position: relative;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutUsModal {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerDescription {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.textAboutUs {
+  margin-left: 18px;
+  margin-right: 40px;
+  margin-top: 10px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.descriptionAboutUs {
+  position: relative;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-items: center;
+  justify-content: space-around;
+}
+
+.profilAboutUs {
+  margin: 10px;
+  text-align: center;
+}
+
+.socialAboutUs {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+}
+
+.logoAboutUs {
+  margin-bottom: 5px;
+  height: 75px;
+  width: 75px;
+}
+
+.nameAboutUs {
+  margin-top: 5px;
+  color: var(--main-color);
+  font-family: bold;
+}
+
+.closeModalAboutUs {
+  position: relative;
+  left: 40%;
+}
+
+.contentsCgu {
+  height: 57vh;
+  overflow-y: scroll;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.groupPicture {
+  height: 50vh;
+}
+
+.titleArticle {
+  padding-bottom: 5px;
+}
+
+.contentsArticle {
+  padding-bottom: 8px;
+}
+
+.wilders {
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.textInputModal {
+  height: 20px;
+}
+
+.submitContact {
+  height: 20px;
+}
