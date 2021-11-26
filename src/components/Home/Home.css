@@ -9,12 +9,12 @@
 .homePresentation {
   color: #e9d362;
   margin: 20px 30px 23px;
-  font-size: x-large;
+  font-size: xxx-large;
   text-align: center;
 }
 
 .btn-grad {
-  /* border: 5px solid darkgreen; */
+  text-decoration: none;
   background-image:
     linear-gradient(
       to right,
@@ -22,8 +22,7 @@
       #333 51%,
       #e9d362 100%
     );
-
-  font-size: medium;
+  font-size: x-large;
   margin: 30px;
   padding: 20px 45px;
   text-align: center;

@@ -66,16 +66,6 @@ body {
   left: -2000px;
 }
 
-/* .side .md > blockquote:last-of-type a:nth-child(2) {
-  animation-duration: 10s;
-  background-size: 250px;
-}
-
-.side .md > blockquote:last-of-type a:nth-child(3) {
-  animation-duration: 20s;
-  background-size: 500px;
-} */
-
 .side .md > blockquote:last-of-type p:nth-of-type(6) a {
   animation-duration: 5s;
   transform: translateZ(75px);
