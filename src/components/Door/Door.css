@@ -43,3 +43,51 @@ img {
   height: 100px;
   width: 100px;
 }
+
+@media screen and (max-width: 768px) {
+  .Door {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-left: 75px solid crimson;
+    border-right: 75px solid crimson;
+    border-radius: 20px;
+    transition: border-width 1s ease;
+    height: 150px;
+    font-weight: bolder;
+  }
+
+  .open {
+    border-width: 0;
+    color: crimson;
+    font-size: 12px;
+  }
+
+  .openInput {
+    height: 150px;
+    width: 150px;
+    color: white;
+    position: absolute;
+    border: none;
+    font-size: 45px;
+    font-family: var(--font);
+  }
+
+  .titleDoor {
+    display: flex;
+    flex-direction: column-reverse;
+    text-decoration: none;
+    text-align: center;
+    color: crimson;
+    align-items: center;
+    justify-content: space-around;
+    height: 150px;
+    padding: 4px;
+  }
+
+  img {
+    height: 75px;
+    width: 75px;
+  }
+}
