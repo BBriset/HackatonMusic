@@ -3,24 +3,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Mountain of Christmas', cursive;
 }
 
 .homePresentation {
   color: #e9d362;
   margin: 20px 30px 23px;
-  font-size: x-large;
+  font-size: xxx-large;
   text-align: center;
 }
 
 .btn-grad {
-  /* border: 5px solid darkgreen; */
-  background-image: linear-gradient(
-    to right,
-    #e9d362 0%,
-    #333 51%,
-    #e9d362 100%
-  );
-  font-size: medium;
+  text-decoration: none;
+  background-image:
+    linear-gradient(
+      to right,
+      #e9d362 0%,
+      #333 51%,
+      #e9d362 100%
+    );
+  font-size: x-large;
   margin: 30px;
   padding: 20px 45px;
   text-align: center;

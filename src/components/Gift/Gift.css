@@ -1,58 +1,47 @@
 body {
-  background-image: url("https://static.videezy.com/system/resources/thumbnails/000/041/837/original/snow10.jpg");
+  background-image: url('https://static.videezy.com/system/resources/thumbnails/000/041/837/original/snow10.jpg');
   color: white;
+  font-family: var(--font);
 }
 
 a {
   color: white;
 }
 
-.title {
+.gift {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  flex-direction: column;
   color: #fff;
   background: #dc163e;
   text-shadow: 0 0 10px #fff;
-  color: #fff;
-  background: #dc163e;
-  width: 400px;
+  width: 70%;
   height: 200px;
-  font-size: 40px;
+  border-radius: 50px;
   text-align: center;
-  padding-top: 100px;
-  border-radius: 100px;
-  margin: auto;
-  margin-top: 50px;
+}
+
+.title,
+.song {
+  font-size: 50px;
 }
 
 .song {
-  color: #fff;
-  background: #dc163e;
-  text-shadow: 0 0 10px #fff;
-  color: #fff;
-  background: #dc163e;
-  width: 600px;
-  height: 200px;
-  font-size: 40px;
-  text-align: center;
-  padding-top: 100px;
-  border-radius: 100px;
-  margin: auto;
-  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding-top: 30px;
 }
 
-@media screen and (max-width: 375px) {
-  .title {
-    width: 300px;
-    height: 120px;
-    font-size: 30px;
-    border-radius: 50px;
-    padding-top: 40px;
+@media screen and (max-width: 768px) {
+  .gift {
+    width: 90%;
+    height: 300px;
   }
 
+  .title,
   .song {
-    width: 350px;
-    height: 120px;
-    font-size: 30px;
-    border-radius: 50px;
-    padding-top: 40px;
+    font-size: 50px;
   }
 }
