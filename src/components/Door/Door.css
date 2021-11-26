@@ -24,7 +24,7 @@
   position: absolute;
   border: none;
   font-size: 60px;
-  font-family: 'Spicy Rice', cursive;
+  font-family: var(--font);
 }
 
 .titleDoor {
