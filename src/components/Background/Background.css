@@ -11,7 +11,7 @@ p {
 body {
   background: #333;
   overflow-x: hidden;
-  height: 1900px;
+  height: 1992px;
 }
 
 .side::before,
@@ -25,7 +25,7 @@ body {
   position: absolute;
   top: 0;
   bottom: 0;
-  background-size: 1920px 1200px;
+  background-size: auto;
   left: 0;
   right: 0;
   pointer-events: none;
