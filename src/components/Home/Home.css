@@ -9,7 +9,7 @@
 .homePresentation {
   color: #e9d362;
   margin: 20px 30px 23px;
-  font-size: x-large;
+  font-size: xxx-large;
   text-align: center;
 }
 
@@ -23,9 +23,11 @@
       #333 51%,
       #e9d362 100%
     );
+
   font-size: medium;
   height: 7vh;
   width: 15vw;
+
   text-align: center;
   align-items: center;
   text-transform: uppercase;
