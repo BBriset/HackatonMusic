@@ -15,22 +15,12 @@
 
 .btn-grad {
   border: 5px solid darkgreen;
-<<<<<<< HEAD
   background-image: linear-gradient(
     to right,
     #e9d362 0%,
     #333 51%,
     #e9d362 100%
   );
-=======
-  background-image:
-    linear-gradient(
-      to right,
-      #e9d362 0%,
-      #333 51%,
-      #e9d362 100%
-    );
->>>>>>> 817b5674d5df92dc99bef48024c0218608274835
   font-size: medium;
   margin: 30px;
   padding: 20px 45px;
