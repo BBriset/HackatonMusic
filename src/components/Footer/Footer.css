@@ -1,12 +1,11 @@
 .footerContact {
   background-color: var(--secondary-color);
   color: white;
-  padding: 20px;
   font-size: 15px;
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
-  margin-top: 10px;
+  height: 15vh;
 }
 
 .ReactModal__Overlay {
