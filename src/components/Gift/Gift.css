@@ -1,6 +1,7 @@
 body {
-  background-image: url("https://static.videezy.com/system/resources/thumbnails/000/041/837/original/snow10.jpg");
+  background-image: url('https://static.videezy.com/system/resources/thumbnails/000/041/837/original/snow10.jpg');
   color: white;
+  font-family: var(--font);
 }
 
 a {
@@ -11,8 +12,6 @@ a {
   color: #fff;
   background: #912c22;
   text-shadow: 0 0 10px #fff;
-  color: #fff;
-  background: #912c22;
   width: 400px;
   height: 200px;
   font-size: 40px;
@@ -27,8 +26,6 @@ a {
   color: #fff;
   background: #912c22;
   text-shadow: 0 0 10px #fff;
-  color: #fff;
-  background: #912c22;
   width: 600px;
   height: 200px;
   font-size: 40px;
