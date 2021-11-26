@@ -1,11 +1,12 @@
 .footerContact {
   background-color: var(--secondary-color);
   color: white;
-  padding: 10px;
+  padding: 20px;
   font-size: 15px;
-  width: 100;
   position: fixed;
   bottom: 0;
+  width: 100%;
+  margin: 10px 10px 10px;
 }
 
 .footerContent {
@@ -16,6 +17,7 @@
   display: flex;
   justify-content: space-evenly;
   padding: end;
+  font-size: x-large;
 }
 
 .titleFollow {
