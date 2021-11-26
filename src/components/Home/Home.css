@@ -9,8 +9,9 @@
 .homePresentation {
   color: #e9d362;
   margin: 20px 30px 23px;
-  font-size: xx-large;
+  font-size: 6vh;
   text-align: center;
+  cursor: default;
 }
 
 .btn-grad {
@@ -48,5 +49,9 @@
   .btn-grad {
     height: 7vh;
     width: 50vw;
+  }
+
+  .homePresentation {
+    font-size: 3.5vh;
   }
 }

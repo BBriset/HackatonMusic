@@ -55,7 +55,11 @@ a {
 
   .title,
   .song {
-    font-size: 50px;
+    font-size: 40px;
+  }
+
+  .score {
+    margin-top: 15px;
   }
 
   .clip {
